@@ -1,0 +1,356 @@
+/* Esto serían los estilos básicos para todo lo que se trata de la tipografía*/
+
+p {
+  text-align: center;
+}
+
+/*Esto serían los estilos de la barra de navegación*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  /* background-color: rgb(192, 192, 248); */
+  overflow-x: hidden;
+  background-image: url("https://i.pinimg.com/736x/31/4a/ac/314aac3374d508843aeb776a3fede38e.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.menu {
+  position: fixed;
+  width: 100vw;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img#my-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.nav-logo h2 {
+  text-decoration: none;
+  color: rgb(192, 192, 248);
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+.name_web {
+  display: flex;
+  align-items: center;
+}
+
+.name_web {
+  text-decoration: none;
+  color: rgb(192, 192, 248);
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.nav-hbmenu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(50, 34, 95);
+  font-size: 1.5rem;
+}
+
+.nav-hbmenu button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1.3rem;
+}
+
+.nav-hbmenu i {
+  display: flex;
+  align-items: center;
+  color: rgb(192, 192, 248);
+  font-size: 1.5rem;
+}
+
+header {
+  height: 4rem;
+  width: 100vw;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(109, 86, 175);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 1000;
+}
+
+.name_web {
+  color: rgb(192, 192, 248);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.name_web:hover {
+  color: rgb(50, 34, 95); /* o el color que tú quieras */
+  transform: scale(1.05);
+}
+
+/* diseño de las tarjetas */
+
+/* Contenedor general */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  margin-top: 6rem;
+}
+
+/* Tarjetas individuales */
+.card {
+  width: 14rem;
+  height: 24rem;
+  background-color: rgb(109, 86, 175);
+  border-radius: 20px;
+  overflow: hidden; /* importante para que la imagen se recorte dentro */
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+/* Imagen dentro de la tarjeta */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card-tittle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  padding: 0 10px;
+  text-align: center;
+  font-size: 1.8rem;
+  transform: translate(-50%, -50%);
+  font-weight: bolder;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: 0;
+}
+
+/* animación hover */
+.card:hover img {
+  opacity: 0.4;
+  transform: scale(1.1);
+}
+.card:hover .card-tittle {
+  opacity: 1;
+}
+/* animación hover */
+
+/* diseño de las tarjetas */
+
+/* Estilos para el botón de la flecha hacia atrás */
+.back-button {
+  position: fixed; /* Fijo para que esté siempre visible */
+  top: 15vh; /* Para que esté arriba */
+  left: 3.3vw; /* Para que esté a la izquierda */
+  background-color: rgb(192, 192, 248);
+  color: rgb(109, 86, 175);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 30%; /* Para redondeado */
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000; /* Para que esté por encima de otros elementos */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición para el hover */
+}
+
+.back-button:hover {
+  background-color: rgb(50, 34, 95); /* Fondo más oscuro al pasar el ratón */
+  transform: scale(1.1); /* Efecto de aumento */
+}
+
+/* Estilo para el icono de la flecha */
+.back-button i {
+  font-size: 1.5rem; /* Tamaño adecuado para la flecha */
+}
+
+/* Analisis */
+.web-analisis {
+  max-width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgb(109, 86, 175);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 6rem;
+}
+
+/* Título centrado con enlace */
+.nombre {
+  text-align: left;
+  font-size: 1.8rem;
+  margin: 2rem;
+  margin-bottom: 3rem;
+}
+
+.nombre a {
+  color: rgb(192, 192, 248);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: bolder;
+}
+.nombre a:hover {
+  color: rgb(50, 34, 95);
+  transform: scale(1.05);
+}
+
+/* Imagen principal */
+.web-homepage {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto 2rem auto;
+}
+
+/* Texto de análisis */
+
+.Analisis p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: white;
+  text-align: justify;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+.Analisis img,
+.Analisis .home {
+  display: block;
+  width: 50%;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
+.Analisis .other-videos-conteiner {
+  display: block;
+  width: 70%;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
+.Analisis .other-videos {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.Analisis .other-videos video {
+  display: block;
+  width: 25%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
+.Analisis .video-homepage video {
+  display: block;
+  width: 40%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
+.Analisis .images {
+  display: block;
+  width: 30%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
+.other-videos2 {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.other-videos2 video {
+  display: block;
+  width: 65%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
+.Analisis .images2 img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
+/* Analisis */
+
+/* footer */
+
+.footer-inicio {
+  background-color: rgb(109, 86, 175);
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-inicio p {
+  color: rgb(192, 192, 248);
+  font-size: 1rem;
+  margin: 0;
+}
+.footer {
+  background-color: rgb(109, 86, 175);
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer p {
+  color: rgb(192, 192, 248);
+  font-size: 1rem;
+  margin: 0;
+}
+/* footer */
