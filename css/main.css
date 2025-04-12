@@ -175,8 +175,8 @@ header {
 /* Estilos para el botón de la flecha hacia atrás */
 .back-button {
   position: fixed; /* Fijo para que esté siempre visible */
-  top: 15vh; /* Para que esté arriba */
-  left: 3.3vw; /* Para que esté a la izquierda */
+  top: 14.9vh; /* Para que esté arriba */
+  left: 5.3vw; /* Para que esté a la izquierda */
   background-color: rgb(192, 192, 248);
   color: rgb(109, 86, 175);
   border: none;
@@ -248,10 +248,16 @@ header {
   margin-top: 2rem;
 }
 
-.Analisis img,
 .Analisis .home {
   display: block;
   width: 50%;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+.Analisis img {
+  display: block;
+  width: 100%;
   margin: 1.5rem auto;
   border-radius: 10px;
   position: center;
@@ -292,6 +298,15 @@ header {
 .Analisis .images {
   display: block;
   width: 30%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
+.texto-mal {
+  display: block;
+  width: 100%;
   height: auto;
   margin: 1.5rem auto;
   border-radius: 10px;
