@@ -20,6 +20,9 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu {
@@ -96,6 +99,10 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   position: fixed;
   z-index: 1000;
+}
+
+main {
+  flex: 1;
 }
 
 .name_web {
@@ -345,7 +352,6 @@ header {
   background-color: rgb(109, 86, 175);
   text-align: center;
   padding: 1rem;
-  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -377,7 +383,7 @@ header {
 /* ----------- Responsive Design ----------- */
 
 /* Tablets y móviles grandes (hasta 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1034px) {
   .card-container {
     justify-content: center;
     gap: 15px;
@@ -396,15 +402,16 @@ header {
   .nav-hbmenu button {
     padding: 1rem;
   }
-}
 
-.footer-inicio {
-  background-color: rgb(109, 86, 175);
-  text-align: center;
-  padding: 1rem;
-  left: 0;
-  width: 100%;
-  margin-top: auto;
+  .footer-inicio {
+    background-color: rgb(109, 86, 175);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+  }
 }
 
 /* Móviles (hasta 768px) */
@@ -470,6 +477,16 @@ header {
     cursor: pointer;
     z-index: 1000;
     transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .footer-inicio {
+    background-color: rgb(109, 86, 175);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
   }
 }
 
