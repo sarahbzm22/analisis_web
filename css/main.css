@@ -112,7 +112,7 @@ main {
 }
 
 .name_web:hover {
-  color: rgb(50, 34, 95); /* o el color que tú quieras */
+  color: rgb(50, 34, 95);
   transform: scale(1.05);
 }
 
@@ -135,7 +135,7 @@ main {
   height: 24rem;
   background-color: rgb(109, 86, 175);
   border-radius: 20px;
-  overflow: hidden; /* importante para que la imagen se recorte dentro */
+  overflow: hidden; /* para que la imagen se recorte dentro */
   position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-decoration: none;
@@ -181,14 +181,14 @@ main {
 
 /* Estilos para el botón de la flecha hacia atrás */
 .back-button {
-  position: fixed; /* Fijo para que esté siempre visible */
-  top: 14.9vh; /* Para que esté arriba */
-  left: 5.3vw; /* Para que esté a la izquierda */
+  position: fixed;
+  top: 14.9vh;
+  left: 5.3vw;
   background-color: rgb(192, 192, 248);
   color: rgb(109, 86, 175);
   border: none;
   padding: 0.5rem;
-  border-radius: 30%; /* Para redondeado */
+  border-radius: 30%;
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 1000; /* Para que esté por encima de otros elementos */
@@ -196,13 +196,13 @@ main {
 }
 
 .back-button:hover {
-  background-color: rgb(50, 34, 95); /* Fondo más oscuro al pasar el ratón */
+  background-color: rgb(50, 34, 95);
   transform: scale(1.1); /* Efecto de aumento */
 }
 
 /* Estilo para el icono de la flecha */
 .back-button i {
-  font-size: 1.5rem; /* Tamaño adecuado para la flecha */
+  font-size: 1.5rem;
 }
 
 /* Analisis */
@@ -380,9 +380,9 @@ main {
 }
 /* footer */
 
-/* ----------- Responsive Design ----------- */
+/* responsive */
 
-/* Tablets y móviles grandes (hasta 1024px) */
+/* Tablets y móviles grandes (hasta 1034px) */
 @media (max-width: 1034px) {
   .card-container {
     justify-content: center;
@@ -490,7 +490,7 @@ main {
   }
 }
 
-/* Móviles muy pequeños (hasta 480px) */
+/* Móviles pequeños (hasta 480px) */
 @media (max-width: 480px) {
   .card {
     width: 90%;
